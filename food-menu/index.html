@@ -1,0 +1,59 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Food<span>ie</span></h1>
+    <button id="cartBtn">Cart 🛒 <b id="count">0</b></button>
+  </header>
+
+  <section class="hero">
+    <div>
+      <p>WELCOME TO FOODIE</p>
+      <h2>Delicious food,<br><span>simple choices.</span></h2>
+      <a href="#menu">Explore Menu</a>
+    </div>
+    <div class="hero-icon">🍔</div>
+  </section>
+
+  <section id="menu">
+    <div class="top">
+      <div>
+        <p>OUR MENU</p>
+        <h2>Choose your favourite</h2>
+      </div>
+      <input type="text" id="search" placeholder="Search food...">
+    </div>
+
+    <div class="categories">
+      <button class="active" data-cat="All">All</button>
+      <button data-cat="Burger">Burger</button>
+      <button data-cat="Pizza">Pizza</button>
+      <button data-cat="Drinks">Drinks</button>
+      <button data-cat="Dessert">Dessert</button>
+    </div>
+
+    <div id="foodList" class="food-list"></div>
+  </section>
+
+  <div id="cart" class="cart">
+    <div class="cart-box">
+      <button id="close">×</button>
+      <h2>Your Cart</h2>
+      <div id="cartItems"></div>
+      <h3>Total: ₹<span id="total">0</span></h3>
+      <button id="order">Place Order</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
