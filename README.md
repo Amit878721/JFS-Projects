@@ -104,3 +104,32 @@ The projects were enhanced while preserving their original implementation style:
 ## Purpose
 
 These projects are part of my academic coursework and practical learning journey in Java and Full Stack development.
+
+
+
+
+
+# Multi-Threaded CSV File Processor
+
+A Java-based project that processes multiple sales CSV files concurrently using multithreading and generates a combined sales report.
+
+### Features
+
+* Processes multiple CSV files using `ExecutorService`
+* Validates sales records and skips invalid data
+* Calculates total units sold and revenue
+* Generates a product-wise summary and top products report
+
+### Technologies
+
+Java, Multithreading, CSV File Handling, OOP
+
+### How to Run
+
+Run `run_windows.bat` on Windows.
+
+The generated report is saved in `output/report.txt`.
+
+### Learning Outcome
+
+Learned Java multithreading, file handling, exception handling, and the Builder Design Pattern.
