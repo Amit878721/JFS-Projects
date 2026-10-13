@@ -6,6 +6,7 @@ About Me
 
 - Name: Amit
 - Program: B.Tech — Computer Science and Engineering
+- Registration number —  RA2411003030185
 - Branch/Section: CSE Core — D
 - Institute: SRM Institute of Science and Technology
 
