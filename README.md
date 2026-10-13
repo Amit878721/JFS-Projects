@@ -1,77 +1,130 @@
-# JFS-Projects
+JFS-Projects
 
-A collection of Java Full Stack and academic projects developed as part of my coursework and practical learning.
+A collection of Java-based projects demonstrating practical programming skills, object-oriented design, GUI development, inventory management, and multithreaded file processing.
 
-## About Me
+About Me
 
-- **Name:** Amit
-- **Program:** B.Tech - Computer Science and Engineering
-- **Institute:** SRM Institute of Science and Technology
+- Name: Amit
+- Program: B.Tech — Computer Science and Engineering
+- Branch/Section: CSE Core — D
+- Institute: SRM Institute of Science and Technology
 
-## Projects
+Projects
 
-### 1. Food Menu
+1. Calculator-GUI
 
-A Java-based food menu project demonstrating basic menu and ordering functionality.
+A GUI-based Java calculator that performs common arithmetic operations and includes additional calculation utilities.
 
-### 2. Calculator-GUI
+Core Features
 
-A **GUI-based Java Calculator**.
-
-The original calculator functionality is retained and enhanced with additional features without changing its GUI-based nature.
-
-**Original features:**
 - Addition
 - Subtraction
 - Multiplication
 - Division
-- Exit
+- Exit functionality
 
-**Additional features:**
-- Clear
-- Percentage
-- Square
-- Square root
+Additional Features
+
+- Clear calculations
+- Percentage calculation
+- Square calculation
+- Square root calculation
 - Calculation history
 - Error handling
 
-**Project type:** GUI application
+Technologies: Java, Java Swing, Maven
 
-### 3. Inventory-Management-System
+Project Type: GUI application
 
-A **console-based Java Inventory Management System**.
+2. Inventory-Management-System
 
-The original console-based form is retained and enhanced with additional inventory and reporting features.
+A console-based Java application for managing products, categories, stock levels, and inventory reports using file-based storage.
 
-**Original features:**
+Core Features
+
 - Product management
 - Category management
 - Stock management
-- Low-stock report
+- Low-stock reporting
 - File-based data storage
 
-**Additional features:**
-- Inventory dashboard / summary
-- Total inventory value
+Additional Features
+
+- Inventory dashboard and summary
+- Total inventory value calculation
 - Inventory value report
 - Out-of-stock report
-- Search products by category
-- Improved reporting
+- Product search by category
+- Improved inventory reporting
 
-**Project type:** Console application
+Technologies: Java, Object-Oriented Programming, Collections, File Handling
 
-## Technologies Used
+Project Type: Console application
 
-- Java
-- Java Swing / GUI
-- Object-Oriented Programming
-- File Handling
-- Collections
-- Maven (Calculator-GUI)
+3. MultiThreadedFileProcessor
 
-## Repository Structure
+A Java application that processes multiple sales CSV files concurrently and generates a consolidated sales report.
 
-```text
+Key Features
+
+- Concurrent processing using "ExecutorService"
+- Sales record validation
+- Skipping invalid records
+- Calculation of total units sold and revenue
+- Product-wise sales summary
+- Top-products report
+- Generated report saved to "output/report.txt"
+
+Technologies: Java, Multithreading, CSV File Handling, Object-Oriented Programming, Builder Design Pattern
+
+How to Run
+
+On Windows, execute the provided "run_windows.bat" file.
+
+The generated report is saved in:
+
+"output/report.txt"
+
+Project Type: Command-line application
+
+4. StudentPortfolioWebsite
+
+A responsive five-page student portfolio website built using Java and Spring Boot, with a bright green-and-white visual theme.
+
+Key Features
+
+- Home page
+- Creator profile page
+- Website overview page
+- Features page
+- Contact page
+- Responsive navigation
+- Modern UI with reusable CSS styling
+- Mobile-friendly layout
+
+Technologies: Java, Spring Boot, Spring Web, HTML, CSS, JavaScript
+
+How to Run
+
+1. Open the project in a Java IDE with Maven support.
+2. Run "StudentPortfolioApplication.java".
+3. Open "http://localhost:8080/" in a browser.
+
+Project Type: Web application
+
+Technologies Used
+
+- Programming Language: Java
+- GUI Development: Java Swing
+- Backend Framework: Spring Boot, Spring Web
+- Frontend: HTML, CSS, JavaScript
+- Core Concepts: Object-Oriented Programming, Collections, Exception Handling
+- File Processing: File Handling, CSV Processing
+- Concurrency: Java Multithreading, "ExecutorService"
+- Build Tool: Maven
+
+Repository Structure
+
 JFS-Projects/
 │
 ├── Calculator-GUI/
@@ -87,49 +140,44 @@ JFS-Projects/
 │   ├── FileManager.java
 │   └── README.md
 │
-├── food-menu/
+├── MultiThreadedFileProcessor/
+│   ├── run_windows.bat
+│   ├── output/
+│   └── README.md
+│
+├── StudentPortfolioWebsite/
+│   ├── pom.xml
+│   ├── README.md
+│   └── src/
 │
 └── README.md
-```
 
-## Project Development Approach
+Note: The directory and file names shown above should match the actual repository structure.
 
-The projects were enhanced while preserving their original implementation style:
+Development Approach
 
-- The **Calculator** remains a GUI application.
-- The **Inventory Management System** remains a console application.
-- Existing functionality was preserved.
-- New features were added to improve usability and demonstrate additional Java concepts.
+These projects demonstrate different Java application styles and development concepts:
 
-## Purpose
+- GUI development: Interactive calculator using Java Swing.
+- Inventory management: Product, category, and stock operations.
+- File processing: Reading, validating, and processing CSV data.
+- Multithreading: Concurrent file processing with "ExecutorService".
+- Web development: A multi-page portfolio website using Spring Boot.
+- Modular programming: Organizing code into reusable classes and components.
 
-These projects are part of my academic coursework and practical learning journey in Java and Full Stack development.
+Learning Outcomes
 
+Through these projects, I have gained practical experience with:
 
+- Java programming and object-oriented design
+- GUI development with Java Swing
+- File handling and data persistence
+- Collections and exception handling
+- Multithreading and concurrent task execution
+- CSV processing and report generation
+- Spring Boot web application development
+- Maven-based project organization
 
+Purpose
 
-
-# Multi-Threaded CSV File Processor
-
-A Java-based project that processes multiple sales CSV files concurrently using multithreading and generates a combined sales report.
-
-### Features
-
-* Processes multiple CSV files using `ExecutorService`
-* Validates sales records and skips invalid data
-* Calculates total units sold and revenue
-* Generates a product-wise summary and top products report
-
-### Technologies
-
-Java, Multithreading, CSV File Handling, OOP
-
-### How to Run
-
-Run `run_windows.bat` on Windows.
-
-The generated report is saved in `output/report.txt`.
-
-### Learning Outcome
-
-Learned Java multithreading, file handling, exception handling, and the Builder Design Pattern.
+This repository showcases my practical programming experience, Java development skills, and progress in building desktop, command-line, and web applications.
