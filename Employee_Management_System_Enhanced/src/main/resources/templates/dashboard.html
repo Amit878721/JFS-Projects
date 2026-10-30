@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+
+<nav>
+
+    <h2>Employee Management</h2>
+
+    <div>
+
+        <span>
+            Welcome,
+            <strong th:text="${username}"></strong>
+        </span>
+
+        <span class="role"
+              th:text="${role}">
+        </span>
+
+        <a href="/logout">
+            Logout
+        </a>
+
+    </div>
+
+</nav>
+
+<div class="container">
+
+    <h1>Dashboard</h1>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <span class="stat-label">Total Employees</span>
+            <strong th:text="${employeeCount}">0</strong>
+        </div>
+        <div class="stat-card">
+            <span class="stat-label">Departments</span>
+            <strong th:text="${departmentCount}">3</strong>
+        </div>
+        <div class="stat-card">
+            <span class="stat-label">Quick Access</span>
+            <strong>2</strong>
+        </div>
+    </div>
+
+    <div class="cards">
+
+        <a href="/employees"
+           class="card">
+
+            <h2>Employees</h2>
+
+            <p>
+                Manage employee records
+            </p>
+
+        </a>
+
+        <a href="/departments"
+           class="card">
+
+            <h2>Departments</h2>
+
+            <p>
+                View departments
+            </p>
+
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
